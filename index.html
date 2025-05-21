@@ -194,7 +194,7 @@
   <header>
     <div style="text-align: center;">
       <img src="https://upload.cc/i1/2025/05/21/9G1z6A.png" alt="樂團 Logo" style="max-width: 180px; width: 100%; height: auto; margin-bottom: 0.8rem;">
-      <h1 style="margin-top: 0; padding: 0.5rem 1rem;">爵士指揮大師班｜MileSpace × 陳含章 博士 × 爵士大樂團</h1>
+      <h1 style="margin-top: 0; padding: 0.5rem 1rem;">爵士指揮大師班｜MileSpace × 陳含章 博士 × 爵序大樂團</h1>
     </div>
   </header>
 
@@ -290,5 +290,29 @@
 </div>
 
 </div>
+<script>
+  const countdown = document.getElementById('countdown');
+  const eventDate = new Date('2025-07-19T13:00:00+08:00').getTime();
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = eventDate - now;
+
+    if (distance <= 0) {
+      countdown.textContent = "活動已開始！";
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    countdown.textContent = `距離活動開始倒數：${days} 天 ${hours} 小時 ${minutes} 分 ${seconds} 秒`;
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
 </body>
 </html>
