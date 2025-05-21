@@ -44,9 +44,6 @@
       border-radius: 12px;
       animation: fadeInDown 1.5s ease both;
     }
-      
-  background-color: transparent;
-}
     .section p,
     .section ul,
     .section li {
@@ -94,17 +91,28 @@
       100% { opacity: 1; transform: translateY(0); }
     }
     @media (max-width: 768px) {
-      html, body {
-        background-attachment: scroll;
-        background-size: cover;
-        background-position: center top;
-        background-repeat: no-repeat;
-      }
-      #bg-container {
-        background-size: contain;
-        background-position: center top;
-        background-repeat: no-repeat;
-      }
+  html, body {
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  #bg-container {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 100vh;
+    width: 100vw;
+  }
+  header h1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .section {
+    padding: 1.5rem 1rem;
+  }
+}
       header h1 {
         font-size: 1.5rem;
         padding: 1rem;
@@ -116,136 +124,6 @@
   </style>
 </head>
 <body>
-  
   <div id="bg-container"></div>
-
-
-  <header>
-  <div style="text-align: center;">
-    <img src="https://upload.cc/i1/2025/05/21/9G1z6A.png" alt="樂團 Logo" style="max-width: 180px; width: 100%; height: auto; margin-bottom: 0.8rem;">
-    <h1 style="margin-top: 0; padding: 0.5rem 1rem;">爵士指揮大師班｜MileSpace × 陳含章 博士 × 爵序大樂團</h1>
-  </div>
-</header>
-
-  <div class="section" style="text-align: center; background-color: transparent;">
-    
-    <div class="countdown" id="countdown">距離活動開始倒數：計算中…</div>
-
-    <h3 style="max-width: 700px; margin: 2rem auto 1rem auto;">🎷 指揮過爵士大樂團嗎？</h3>
-    <p style="max-width: 700px; margin: 0 auto;">你熟悉管樂團，但指揮過爵士大樂團嗎？<br>
-    在傳統管樂團中，我們追求精準與整齊；<br>
-    而在爵士大樂團裡，指揮不只是打拍子——<br>
-    你將學會如何帶出 Swing 的律動、即時回應樂手的音樂語彙，<br>
-    並在沒有固定分譜配置的情況下，靈活調度全場，掌握全局。</p>
-
-    <h3>🎶 爵士的靈魂，是「語言」與「自由」</h3>
-    <p>真正的差異，不在樂器，而在於音樂的語言與自由。<br>
-    爵士強調的是即興、對話與現場的音樂張力。<br>
-    在本次大師班中，你將親自站上指揮台，<br>
-    帶領一組完整的爵士大樂團，<br>
-    實地體驗指揮與樂手之間充滿默契與變化的現場互動。</p>
-
-    <h3>🧭 誰適合參加這場指揮大師班？</h3>
-    <p>以下條件將幫助你從大師班中獲得最豐富的學習體驗：</p>
-    <ul style="display: inline-block; text-align: left; max-width: 700px;">
-      <li>🎷 <strong>對爵士大樂團有基本認識</strong><br>了解爵士大樂團的編制、聲部功能與角色分工（如薩克斯風、銅管、節奏組）。</li>
-      <li>👂 <strong>良好的聽力與分析能力</strong><br>具備「多聲部辨識」能力，能在演奏中聽出聲部平衡與錯誤，感知音色細節。</li>
-      <li>🧠 <strong>一心多用的指揮能力</strong><br>能同步關注節奏、錯音、情緒張力與整體聲響，並即時作出調整。</li>
-      <li>🗣 <strong>音樂表達與溝通能力</strong><br>懂得用肢體語言帶出情緒與段落表現，與樂手建立清晰的音樂互動。</li>
-      <li>💡 <strong>開放學習與接受回饋的態度</strong><br>本活動包含實作與一對一講評，適合願意嘗試、修正並追求進步的你。</li>
-    </ul>
-
-    <h3>📅 活動資訊</h3>
-<ul>
-  <li>🕒 <strong>時間：</strong>2025 年 7 月 19 日（六）下午 1:00－3:00</li>
-  <li>📍 <strong>地點：</strong>MileSpace（台中市北區電台街 1 號，台中放送局內）</li>
-  <li>👥 <strong>對象：</strong>音樂教師、樂團指揮、學生、爵士樂愛好者</li>
-  <li>💬 <strong>報名方式：</strong>現場旁聽 $350；接受指導 $2000（限額 2 名，含 $150 酒水折抵）</li>
-</ul>
-
-    <h3>📌 活動亮點</h3>
-<ul>
-  <li>✅ 實際站上指揮台，與全編制爵士大樂團互動演出</li>
-  <li>✅ 陳含章博士親自一對一講評與建議</li>
-  <li>✅ 認識爵士樂團與傳統管樂不同之處</li>
-  <li>✅ 擴展樂團教學與音樂教育的可能性</li>
-</ul>
-
-    <div style="text-align: center;">
-  <a href="https://ibb.co/9H4HDLFD" target="_blank">
-    <img src="https://upload.cc/i1/2025/05/21/z9ERkP.jpeg" alt="講師照片" style="max-width: 300px; width: 100%; height: auto; margin-bottom: 1.5rem; border-radius: 12px;">
-  </a>
-  <h3>👤 講師介紹｜陳含章 博士</h3>
-  <p style="max-width: 700px; margin: 0 auto;">
-    陳含章博士，台裔全方位音樂人。身兼鍵盤即興演奏家、作/編曲家、伴奏家、教育家以及天主教禮儀音樂工作者等數職。
-    先後獲得國立台灣師範大學音樂系鋼琴組學士、美國伊斯曼音樂學院(Eastman School of Music)爵士音樂系碩博士，
-    取得古典鋼琴以及爵士鋼琴演奏學位，亦為華人首位爵士鋼琴演奏博士（第二位台灣爵士演奏博士）。
-    現任德州農工大學金斯維爾分校爵士樂專任助理教授，為首位於美國正規大學音樂系專任教授爵士樂的台灣人。
-  </p>
-  <p style="max-width: 700px; margin: 0 auto;">
-    於 2021 年 12 月以數位、翌年七月以實體發行首張個人爵士聖樂專輯《給老天爺的悄悄話》(Whispering to God)，
-    並著手進行爵士樂與天主教禮儀之關係（爵士彌撒曲）研究。其中同名曲《給老天爺的悄悄話》入圍 2022 金音創作獎最佳爵士歌曲獎，
-    隔年也入圍紐約上州雪城當地音樂獎項（The SAMMY's）觀眾票選最佳個人/團體前八強。
-  </p>
-  <a href="https://forms.gle/5oDZY9XqmgD2GhY77" target="_blank" style="
-    display: inline-block;
-    background-color: #FFD700;
-    color: #000;
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 10px;
-    text-decoration: none;
-    margin: 2rem auto;
-    animation: pulse 2s infinite;
-    transition: transform 0.3s ease;
-  ">立即報名</a>
-
-</div>
-
-<style>
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
-</style>
-
-<div class="map">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.6217941591285!2d120.6884214111638!3d24.149916773230945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d403360afeb%3A0xad088d9f64d9eec6!2zTWlsZVNwYWNlIOmCgeeIvuaWr-eIteWjq-epuumWkw!5e0!3m2!1szh-TW!2stw!4v1747721840134!5m2!1szh-TW!2stw"
-      width="400"
-      height="300"
-      style="border:0;"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </div>
-
-  <script>
-    const countdown = document.getElementById('countdown');
-    const eventDate = new Date('2025-07-19T13:00:00+08:00').getTime();
-
-    setInterval(() => {
-      const now = new Date().getTime();
-      const distance = eventDate - now;
-
-      if (distance <= 0) {
-        countdown.innerHTML = "活動已開始！";
-        return;
-      }
-
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      countdown.innerHTML = `距離活動開始倒數：${days} 天 ${hours} 小時 ${minutes} 分 ${seconds} 秒`;
-    }, 1000);
-  </script>
-<div style="text-align: center; font-size: 0.9rem; padding: 1.5rem 1rem; color: #ccc;">
-  樂團信箱: jazzshiporchestra@gmail.com　｜　聯絡電話: 0911375938　｜　聯絡人: EASEN
-</div>
 </body>
 </html>
