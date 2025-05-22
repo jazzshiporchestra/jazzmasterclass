@@ -120,27 +120,62 @@
 </head>
 <body>
   <div id="bg-container"></div>
-  <!-- 網頁主內容與倒數計時器、報名按鈕、圖片、講師介紹與影片都已經包含在 <div class="section"> 中 -->
-  <!-- 此處略，內容未變 -->
 
-<script>
-  const countdown = document.getElementById('countdown');
-  const eventDate = new Date('2025-07-19T13:00:00+08:00').getTime();
-  function updateCountdown() {
-    const now = new Date().getTime();
-    const distance = eventDate - now;
-    if (distance <= 0) {
-      countdown.textContent = "活動已開始！";
-      return;
+  <div class="section">
+    <header>
+      <h1>爵士指揮大師班｜MileSpace × 陳含章 博士 × 爵士大樂團</h1>
+    </header>
+
+    <div class="countdown" id="countdown">距離活動開始倒數：計算中…</div>
+
+    <p>你熟悉管樂團，但指揮過爵士大樂團嗎？</p>
+    <p>本次大師班由爵序大樂團邀請陳含章博士，透過實作與講評的方式，帶領你實地站上指揮台，與爵士大樂團互動。</p>
+
+    <h3>📅 活動資訊</h3>
+    <ul>
+      <li>🕒 時間：2025 年 7 月 19 日（六）下午 1:00－3:00</li>
+      <li>📍 地點：MileSpace（台中市北區電台街 1 號，台中放送局內）</li>
+      <li>👥 對象：音樂教師、樂團指揮、學生、爵士樂愛好者</li>
+      <li>💬 報名方式：現場旁聽 $350；接受指導 $2000（限額 2 名，含 $150 酒水折抵）</li>
+    </ul>
+
+    <h3>📌 活動亮點</h3>
+    <ul>
+      <li>✅ 實際站上指揮台，與全編制爵士大樂團互動演出</li>
+      <li>✅ 陳含章博士親自一對一講評與建議</li>
+      <li>✅ 認識爵士樂團與傳統管樂不同之處</li>
+      <li>✅ 擴展樂團教學與音樂教育的可能性</li>
+    </ul>
+
+    <a class="btn" href="https://forms.gle/5oDZY9XqmgD2GhY77" target="_blank">立即報名</a>
+
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.6217941591285!2d120.6884214111638!3d24.149916773230945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d403360afeb%3A0xad088d9f64d9eec6!2zTWlsZVNwYWNlIOmCgeeIvuaWr-eIteWjq-epuumWkw!5e0!3m2!1szh-TW!2stw!4v1747721840134!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="footer">
+      樂團信箱: jazzshiporchestra@gmail.com ｜ 聯絡電話: 0911375938 ｜ 聯絡人: EASEN
+    </div>
+  </div>
+
+  <script>
+    const countdown = document.getElementById('countdown');
+    const eventDate = new Date('2025-07-19T13:00:00+08:00').getTime();
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+      if (distance <= 0) {
+        countdown.textContent = "活動已開始！";
+        return;
+      }
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      countdown.textContent = `距離活動開始倒數：${days} 天 ${hours} 小時 ${minutes} 分 ${seconds} 秒`;
     }
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    countdown.textContent = `距離活動開始倒數：${days} 天 ${hours} 小時 ${minutes} 分 ${seconds} 秒`;
-  }
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
-</script>
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
 </body>
 </html>
